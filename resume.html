@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeremiah A. Eliver - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e0e7ff, #f5f3ff);
+      color: #333;
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(to bottom, #1d1c59, #6d28d9);
+      color: white;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    nav {
+      background-color: #1d1c59;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      gap: 1.5rem;
+      z-index: 999;
+      animation: slideInLeft 1s ease-out;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #a78bfa;
+      transform: scale(1.05);
+    }
+    main {
+      margin-left: 220px;
+      padding: 2rem;
+    }
+    section {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s forwards;
+    }
+    section:nth-of-type(1) { animation-delay: 0.2s; }
+    section:nth-of-type(2) { animation-delay: 0.4s; }
+    section:nth-of-type(3) { animation-delay: 0.6s; }
+    section:nth-of-type(4) { animation-delay: 0.8s; }
+    section:nth-of-type(5) { animation-delay: 1s; }
+
+    h2 {
+      border-bottom: 2px solid #6d28d9;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideInLeft {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#languages">Languages</a>
+  </nav>
+
+  <main>
+    <header>
+      <img src="aacd1e26-01a6-46f0-8946-f85aab2c1f57.jpg" alt="Jeremiah Eliver" />
+      <div class="info">
+        <h1>Jeremiah A. Eliver</h1>
+        <p>📞 0991-074-2892</p>
+        <p>📧 jeremiaheliver@gmail.com</p>
+        <p>📍 San Jose Valing, Brgy. Libacao, Himamaylan City, Negros Occidental, Visayas</p>
+      </div>
+      <p style="text-align:center; margin-top: 1rem;">
+        🔗 Facebook Account: 
+        <a href="https://www.facebook.com/share/1C3QgXUViH/
+        " target="_blank" style="color: #a78bfa; font-weight: bold;">
+        https://www.facebook.com/share/1C3QgXUViH/
+
+        </a>
+      </p>
+    </header>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>With a bachelor's degree in information systems, this dedicated learner exhibits teamwork, adaptability, and a proactive approach to assignments, eager to apply academic knowledge and contribute professionally.</p>
+    </section>
+
+    <section id="education">
+      <h2>Academic Background</h2>
+      <ul>
+        <li><strong>Primary:</strong> Florinda Alunan Gatoslao Elementary School (2008 - 2014)</li>
+        <li><strong>Secondary:</strong> Payao National High School (2014 - 2018)</li>
+        <li><strong>Senior High School:</strong> Hinigaran National High School (TVL-CSS) (2018 - 2020)</li>
+        <li><strong>Tertiary:</strong> Carlos Hilado Memorial State University (2020 - 2025)<br />
+          – Bachelor of Science in Information Systems</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>During my two-week work immersion at Jegabytes in Bacolod, I gained hands-on experience in IT and computer hardware, including system troubleshooting, hardware assembly, and software installation. Working with skilled IT professionals, I enhanced my technical skills, problem-solving, and teamwork, while gaining insights into workplace efficiency and adaptability.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Computer troubleshooting</li>
+        <li>Software installation</li>
+        <li>Basic networking</li>
+        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+        <li>Teamwork and communication</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>Hiligaynon</li>
+        <li>Tagalog</li>
+        <li>English</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
